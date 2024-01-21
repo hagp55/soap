@@ -1,0 +1,25 @@
+.footer {
+    padding: 14px;
+    // position: fixed;
+    // bottom: 0;
+    width: 100%;
+    background-color: $main-color-header-footer;
+    &__social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 10px;
+    }
+    &__social-item{
+        width: 22px;
+        height: 22px;
+        img{
+            height: 100%;
+        }
+    }
+    &__copyright{
+        text-align: center;
+        font-size: 12px;
+    }
+}
