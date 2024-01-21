@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>ChlenoMylo</title>
+  <title>Регистрация ChlenoMylo</title>
 </head>
 <body>
   <header class="header">
@@ -26,7 +26,7 @@
             <a href="" class="toolbar__link"><img src="./icons/search.svg" alt=""></a>
             <a href="" class="toolbar__link"><img src="./icons/favorite.svg" alt=""></a>
             <a href="" class="toolbar__link"><img src="./icons/cart.svg" alt=""></a>
-            <a href="login.html" class="toolbar__link"><img src="./icons/account.svg" alt=""></a>
+            <a href="" class="toolbar__link"><img src="./icons/account.svg" alt=""></a>
           </div>
         </div>
       </div>
@@ -38,56 +38,47 @@
   </header>
   <main>
     <div class="container">
-    <section class="products">
-        <div class="products__wrapper">
-          <div class="products__item">
-            <a href="detail.html" class="products__photo">
-              <img src="img/item1/photo1.jpeg" alt="" class="products__photo">
-            </a>
-            <div class="products__body">
-              <div class="products__title">Сфинкс</div>
-              <div class="products__price">130₽</div>
+    <section class="account">
+        <div class="account-form__wrapper">
+        <form class="account-form">
+            <div class="account-form__header">
+                <div class="account-form__header-title">Регистрация</div>
+                <div class="account-form__header-logo"><img class="" src="icons/logo.png" alt=""></div>
             </div>
-          </div>
-          <div class="products__item">
-            <div class="products__photo">
-              <img src="img/item2/photo1.jpeg" alt="" class="products__photo">
+            <div class="account-form__form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email"
+                        aria-label="Почта" placeholder="Введите e-mail" required>
             </div>
-            <div class="products__body">
-              <div class="products__title">Тыква</div>
-              <div class="products__price">130₽</div>
+            <div class="account-form__form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password"
+                        placeholder="Введите пароль"
+                        title="Minimum 6 characters at least 1 Alphabet and 1 Number"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                        aria-label="Пароль" required>
             </div>
-          </div>
-          <div class="products__item">
-            <div class="products__photo">
-              <img src="img/item3/photo1.jpeg" alt="" class="products__photo">
+            <div class="account-form__form-group">
+                <label for="repeat_password">Повторите пароль:</label>
+                <input type="password" id="repeat_password" name="password"
+                        placeholder="Повторите пароль еще раз"
+                        title="Minimum 6 characters at least 1 Alphabet and 1 Number"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                        aria-label="Пароль" required>
             </div>
-            <div class="products__body">
-              <div class="products__title">Тут какой то большой текст для примера</div>
-              <div class="products__price">130₽</div>
+            <button class="btn">Создать</button>
+            <div class="account-actions">
+                <div class="account-actions__forgot_password">
+                    <a href="">Забыли пароль?</a>
+                </div>
+                <div class="account-actions__sign-up">
+                    <a href="login.html">Войти</a>
+                </div>
             </div>
-          </div>
-          <div class="products__item">
-            <div class="products__photo">
-              <img src="img/item4/photo1.jpeg" alt="" class="products__photo">
-            </div>
-            <div class="products__body">
-              <div class="products__title">Медведь</div>
-              <div class="products__price">130₽</div>
-            </div>
-          </div>
-          <div class="products__item">
-            <div class="products__photo">
-              <img src="img/item3/photo1.jpeg" alt="" class="products__photo">
-            </div>
-            <div class="products__body">
-              <div class="products__title">Фак</div>
-              <div class="products__price">130₽</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      </div>
+        </form>
+    </div>
+    </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="container">
