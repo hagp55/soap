@@ -23,3 +23,7 @@ body{
 .container{
     position: relative;
 }
+
+main{
+    min-height: calc(100svh - 48px - 44px);
+}
