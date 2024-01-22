@@ -2,7 +2,7 @@
     padding: 18px 12px;
     margin-bottom: 30px;
     &__photo-wrapper{
-        height: 320px;
+        height: 400px;
         background-color: $main-bg-plate;
         border-radius: 15px;
         margin-bottom: 15px;
@@ -10,8 +10,8 @@
         img{
             height: 100%;
             width: 100%;
-            object-fit:scale-down;
-            object-fit:contain;
+            // object-fit:scale-down;
+            object-fit:cover;
         }
     }
     &__body{
